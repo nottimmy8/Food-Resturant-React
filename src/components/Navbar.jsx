@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../assets/food-logo.png";
-import { IoCartOutline } from "react-icons/io5";
 import DarkMode from "./DarkMode";
 
 function Navbar() {
@@ -16,8 +15,8 @@ function Navbar() {
               <img src={Logo} alt="Foodie Zone" className="w-10 " /> Foodie
             </a>
           </div>
-          <div className="flex items-center gap-4">
-            <div>
+          <div className="flex justify-between items-center gap-4">
+            <div className="">
               <DarkMode />
             </div>
             <ul className="hidden sm:flex gap-4">
@@ -46,11 +45,12 @@ function Navbar() {
                 </a>
               </li>
             </ul>
+            <div>
+              <button className=" bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full">
+                Order
+              </button>
+            </div>
           </div>
-          <button className=" bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-3">
-            Order{" "}
-            <IoCartOutline className="text-xl text-white drop-shadow-sm cursor-pointer" />
-          </button>
         </div>
       </div>
     </div>
