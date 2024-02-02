@@ -17,6 +17,14 @@ function DarkMode() {
     }
   }, [theme]);
 
+  const changeTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
   return (
     <div>
       <div>
