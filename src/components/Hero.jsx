@@ -66,6 +66,21 @@ function Hero() {
                 />
               </div>
               {/* image list section */}
+              <div className=" flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-0 lg:-righ-10 bg-white/30 rounded-full ">
+                {Imagelist.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.img}
+                    alt=""
+                    className=" max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200 "
+                    onClick={() => {
+                      setImageId(
+                        item.id === 1 ? Food1 : item.id === 2 ? Food2 : Food3
+                      );
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
