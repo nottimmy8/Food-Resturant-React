@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Service from "./components/Service";
+import Banner from "./components/Banner";
+import AppStore from "./components/AppStore";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -9,6 +12,9 @@ function App() {
       <Navbar />
       <Hero />
       <Service />
+      <Banner />
+      <AppStore />
+      <Testimonial />
     </div>
   );
 }

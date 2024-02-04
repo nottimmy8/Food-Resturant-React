@@ -50,7 +50,7 @@ function Service() {
                 return (
                   <div
                     key={id}
-                    className=" max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary hover:text-white duration-300 shadow-xl"
+                    className=" max-w-[300px] group rounded-2xl bg-white hover:bg-primary dark:bg-gray-800 dark:hover:bg-primary hover:text-white duration-300 shadow-xl"
                   >
                     <div className=" h-[100px] ">
                       <img
